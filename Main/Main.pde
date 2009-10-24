@@ -10,6 +10,10 @@
 // SVG is the preferred image format      //
 //   for this project                     //
 ////////////////////////////////////////////
+//        --THINGS TO CONSIDER--          //
+// Painting sprites from furthest away    //
+//   to closest.                          //
+////////////////////////////////////////////
 
 //import processing.xml.*;
 //import geomerative.*;
@@ -18,6 +22,7 @@
 PImage a;
 int rx; //a single reference point (x)
 int ry; //                         (y)
+Sprite spr1;
 
 void setup() { //this is where we initialize variables and set up the environment.
   size(800, 600);
@@ -25,6 +30,8 @@ void setup() { //this is where we initialize variables and set up the environmen
   a = loadImage("images/base.png");
   rx = 0;
   ry = 0;
+  spr1 = new Sprite(275,575);
+  noCursor();
 }
 
 void draw(){ //this is the loop that happens constantly
@@ -36,5 +43,7 @@ void draw(){ //this is the loop that happens constantly
       image(a, i*200 -rx, j*100 - ry);
     }
   }
+  spr1.paint(rx,ry);
+  ellipseMode(CENTER);
   ellipse(mouseX,mouseY,20,20);
 }
