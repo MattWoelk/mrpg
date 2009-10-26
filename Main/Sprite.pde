@@ -17,4 +17,27 @@ public class Sprite{
     ellipseMode(CORNER);
     ellipse(x - xoff,y - yoff - 100,100,200);
   }
+
+  public void keyPressed(char k){
+    switch(k){
+    case 'w':
+      x += 100;
+      y -= 50;
+      break;
+    case 's':
+      x -= 100;
+      y += 50;
+      break;
+    case 'a':
+      x -= 100;
+      y -= 50;
+      break;
+    case 'd':
+      x += 100;
+      y += 50;
+      break;
+    default:
+      break;
+    }
+  }
 }

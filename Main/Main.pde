@@ -50,3 +50,8 @@ void draw(){ //this is the loop that happens constantly
   ellipse(mouseX,mouseY,20,20);
   dbox1.paint();
 }
+
+void keyPressed(){
+  char k = (char)key;
+  spr1.keyPressed(k);
+}
