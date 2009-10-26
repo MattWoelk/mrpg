@@ -23,6 +23,7 @@ PImage a;
 int rx; //a single reference point (x)
 int ry; //                         (y)
 Sprite spr1;
+Diabox dbox1;
 
 void setup() { //this is where we initialize variables and set up the environment.
   size(800, 600);
@@ -32,6 +33,7 @@ void setup() { //this is where we initialize variables and set up the environmen
   ry = 0;
   spr1 = new Sprite(275,575);
   noCursor();
+  dbox1 = new Diabox(false);
 }
 
 void draw(){ //this is the loop that happens constantly
@@ -46,4 +48,5 @@ void draw(){ //this is the loop that happens constantly
   spr1.paint(rx,ry);
   ellipseMode(CENTER);
   ellipse(mouseX,mouseY,20,20);
+  dbox1.paint();
 }
