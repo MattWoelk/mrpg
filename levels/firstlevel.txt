@@ -1,0 +1,14 @@
+#comment
+
+#empty lines should be ignored
+
+#Basic Layout of a square level:
+
+o o o o o
+o o o o o
+o o o o o
+o o o o o
+o o o o
+
+#spaces will be ignored as well
+#they are just so that things look square

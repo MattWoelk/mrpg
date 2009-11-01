@@ -24,6 +24,7 @@ int rx; //a single reference point (x)
 int ry; //                         (y)
 Sprite spr1;
 Diabox dbox1;
+Level lvl1;
 
 void setup() { //this is where we initialize variables and set up the environment.
   size(800, 600);
@@ -34,6 +35,7 @@ void setup() { //this is where we initialize variables and set up the environmen
   spr1 = new Sprite(275,575);
   noCursor();
   dbox1 = new Diabox(false);
+  lvl1 = new Level(0);
 }
 
 void draw(){ //this is the loop that happens constantly
@@ -54,4 +56,9 @@ void draw(){ //this is the loop that happens constantly
 void keyPressed(){
   char k = (char)key;
   spr1.keyPressed(k);
+}
+
+void keyReleased(){
+  char k = (char)key;
+  spr1.keyReleased(k);
 }
