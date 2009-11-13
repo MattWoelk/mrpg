@@ -15,48 +15,49 @@
 //   to closest.                          //
 ////////////////////////////////////////////
 
-//import processing.xml.*;
-//import geomerative.*;
-
 
 PImage a;
 int rx; //a single reference point (x)
 int ry; //                         (y)
+
+//ELEMENTS
 Sprite spr1;
 Diabox dbox1;
-Level lvl1;
+Level level;
 
-void setup() { //this is where we initialize variables and set up the environment.
+
+void setup() {
   size(800, 600);
   smooth();
   a = loadImage("images/base.png");
+  spr1 = new Sprite(275,575);
+
   rx = 0;
   ry = 0;
-  spr1 = new Sprite(275,575);
+
   noCursor();
   dbox1 = new Diabox(false);
-  lvl1 = new Level(0);
+  level = new Level(0);
 }
 
-void draw(){ //this is the loop that happens constantly
+
+void draw(){
+  background(102); 
+  level.paint();
   rx = mouseX;
   ry = mouseY;
-  background(102); 
-  for(int i = -2; i < 13; i++){
-    for(int j = -2; j < 20; j++){
-      image(a, i*200 -rx, j*100 - ry);
-    }
-  }
   spr1.paint(rx,ry);
   ellipseMode(CENTER);
   ellipse(mouseX,mouseY,20,20);
   dbox1.paint();
 }
 
+
 void keyPressed(){
   char k = (char)key;
   spr1.keyPressed(k);
 }
+
 
 void keyReleased(){
   char k = (char)key;

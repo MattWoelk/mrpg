@@ -1,0 +1,65 @@
+Incubator: Fortune Cat Games
+  They're sponsored by the government and major game companies. They get "free money" and equipment. We give them a game idea. They then give us office space and equipment and introduce us to field folk, and we give'er.
+
+  Do we have to have a prototype?
+    We have to have a "prototype game" so a little work done on it so far.
+    We pitch them an idea and we're supposed to be making the game during this thing. 
+    1-year program.
+
+    how they choose a person:
+      uniqueness
+      marketability
+
+
+Graphics:
+  RPG: we can handle he graphics. Maybe swap them out if they suck.
+  B: it's a prototype. Doesn't matter.
+  J: I want to get a graphics person to be on our team.
+
+Company Name:
+  God-Mode Games.
+  God Mode Games
+  GodMode Games
+
+  Rhyming as opposed to alliteration.
+
+  TOOLBOX Games
+
+  D: Infinite Manna
+
+MPRG:
+  J's story idea: Basically the story is about "Jim" (not an earthworm). Story is about Jim's life. He's a dude with a job, etc. maybe a wife. It's about he and his relationships. He has bad characteristics. Greedy. Self-centred. Un-caring. Negative aspects. Concept: "wouldn't it be great if you could fight your inner demons... and kill them instead of having to deal with them". You control Jim and you interact with people in his life, but at certain times, things shift into a different world. In this fantasy world, it's what Jim's going through. Let's say Jim is forced to come super selfish. His wife calls him out. In fantasy world, fantasy Jim looks different depending on the characteristic that he's going through. Different visual style between real world and fantasy world. In the fantasy world he would go through a dungeon or maze. battles with his real-world problems. Then depending on the relationships that he fixes or doesn't have fixed, in this fantasy world she'll be there (if he got her back) or he overcomes something and gets a magic sword or something.
+
+  Music part: B: I don't think it fits with the story so we shouldn't do it really. Or just minorly.  J,D agree.
+D: If he's fighting greed. we still want variation in the enemies. Something to be mindful of.
+
+B: Are we intending for there to be a "party" ? (bunch of people). Maybe you overcome something, and then you get it as part of your party. Ex. Generosity joins your team. Keepin' it subtle of course.
+    Choice in how you defeat your bosses because you'd choose your team 'n' stuff. Converting bad to good as a main idea.
+    They could all be the same guy, they'd just look different. It would be a linear game, but would feel non-linear.
+
+M: I don't like controlling the dude when he's in real life.
+  B: what if we do very slight control. Like walking around within a cinematic. No choice, but the player has to do the actions.
+
+M: idea of almost forgetting about the real world, then you do something and it cuts to the real world and then you realize that you've done something horrible/great/moving.
+
+Basic Mechanics:
+  J: turning as a separate control from changing direction.
+  Isometric.
+
+Battles:
+  Stay where you are vs. battle map.
+    a transition into a "battle ground" <-- depending on where you are it would be different.
+    Ex. trees morphing and going crazy
+        If you're in a maze, the walls close off or something.
+
+  Leveling up determined by the story as opposed to fighting scads of little'uns.
+  Levelling up based on storyline as opposed to based on experience.
+  M: cool-down instead of mana [confirmed]
+    having items and abilities that can affect the charge-up and cool-down time.
+    Cool-downs are cool as long as graphics are killer.
+
+  Levelling up: choice for what abilities 'n' stuff?
+
+  Idea where you can choose to be all offensive, half, or all defensive for your next attack/turn.
+    all offensive would do most damage. etc.
+

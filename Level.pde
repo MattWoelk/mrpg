@@ -1,36 +1,47 @@
 public class Level{
-  char[][] tiles;
-  //File file;
-  //FileInputStream fis;
-  //BufferedInputStream bis;
-  //DataInputStream dis;
-  //levels lvls;
+  String lines[];
+  char tiles[][]; 
+  int TILESIZE;
 
-  public Level(int i){
-   // lvls = new levels();
-    //tiles[0] = lvls.getLevel(0).toCharArray();
-    /*file = new File("firstlevel.txt");
-    fis = null;
-    bis = null;
-    dis = null;
-    try {
-      fis = new FileInputStream(file);
-      bis = new BufferedInputStream(fis);
-      dis = new DataInputStream(bis);
-      while(dis.available() != 0){
-        System.out.println(dis.readLine());
+
+  public Level(int num){
+    TILESIZE = 60;
+    tiles = new char[100][100];
+    
+    load(num);
+  }
+
+  public void load(int num){
+    lines = loadStrings("levels/level" + num + ".txt");
+    for(int i = 0; i < lines.length; i++){
+      char temp[] = new char[100];
+      for(int j = 0; j < lines[i].length(); j++){
+        //X AND Y AND BACKWARDS...........
+        tiles[j][i] = lines[i].charAt(j);
       }
-      fis.close();
-      bis.close();
-      dis.close();
-    }catch(FileNotFoundException e){
-      e.printStackTrace();
-    }catch(IOException e){
-      e.printStackTrace();
-    }*/
+    }
   }
 
   public void paint(){
-    
+
+
+
+    //IMP: only draw what's on-screen?
+    for(int i = 0; i < 30; i++){
+      for(int j = 0; j < 20; j++){
+        if(tiles[i][j] == '-'){
+          fill(255);
+        }else if(tiles[i][j] == 'x'){
+          fill(100);
+        }else
+          fill(0);
+        rect(i*TILESIZE,j*TILESIZE,TILESIZE,TILESIZE);
+      }
+    }
+    for(int i = -2; i < 13; i++){
+      for(int j = -2; j < 20; j++){
+        image(a, i*200 -rx, j*100 - ry);
+      }
+    }
   }
 }
