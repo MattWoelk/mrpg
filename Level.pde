@@ -23,24 +23,16 @@ public class Level{
   }
 
   public void paint(){
-
-
-
     //IMP: only draw what's on-screen?
-    for(int i = 0; i < 30; i++){
-      for(int j = 0; j < 20; j++){
-        if(tiles[i][j] == '-'){
-          fill(255);
-        }else if(tiles[i][j] == 'x'){
-          fill(100);
-        }else
+    for(int i = 0; i < tiles.length; i++){
+      for(int j = 0; j < tiles[i].length; j++){
+        if(tiles[i][j] == 'B'){
+          image(a, i*100 + j*100 -2*rx, 4*50 - i*50 + j*50 -2*ry + 500);
+        }else if(tiles[i][j] == 'v'){
+          //rect(i*200 - 2*rx, j*100 - 2*ry,TILESIZE,TILESIZE);
+        }else{
           fill(0);
-        rect(i*TILESIZE,j*TILESIZE,TILESIZE,TILESIZE);
-      }
-    }
-    for(int i = -2; i < 13; i++){
-      for(int j = -2; j < 20; j++){
-        image(a, i*200 -rx, j*100 - ry);
+        }
       }
     }
   }

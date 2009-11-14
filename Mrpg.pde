@@ -46,7 +46,7 @@ void draw(){
   level.paint();
   rx = mouseX;
   ry = mouseY;
-  spr1.paint(rx,ry);
+  spr1.paint(2*rx,2*ry);
   ellipseMode(CENTER);
   ellipse(mouseX,mouseY,20,20);
   dbox1.paint();

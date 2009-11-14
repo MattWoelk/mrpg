@@ -41,29 +41,37 @@ public class Sprite{
     switch(k){
     case 'w':
       if(!keys[0]){
-        xsp += 2;
-        ysp += -1;
+        if (xsp < 2)
+          xsp += 2;
+        if (ysp > -1)
+          ysp += -1;
       }
       keys[0] = true;
       break;
     case 's':
       if(!keys[1]){
-        xsp += -2;
-        ysp += 1;
+        if (xsp > -2)
+          xsp += -2;
+        if (ysp < 1)
+          ysp += 1;
       }
       keys[1] = true;
       break;
     case 'a':
       if(!keys[2]){
-        xsp += -2;
-        ysp += -1;
+        if (xsp > -2)
+          xsp += -2;
+        if (ysp > -1)
+          ysp += -1;
       }
       keys[2] = true;
       break;
     case 'd':
       if(!keys[3]){
-        xsp += 2;
-        ysp += 1;
+        if (xsp < 2)
+          xsp += 2;
+        if (ysp < 1)
+          ysp += 1;
       }
       keys[3] = true;
       break;
@@ -76,29 +84,37 @@ public class Sprite{
   switch(k){
     case 'w':    //instead of all these cases and junk, just make a matrix of 1's and -1's and do some multiplying. <-- less code.
       if(keys[0]){
-        xsp += -2;
-        ysp += 1;
+        if (xsp > -2)
+          xsp += -2;
+        if (ysp < 1)
+          ysp += 1;
       }
       keys[0] = false;
       break;
     case 's':
       if(keys[1]){
-        xsp += 2;
-        ysp += -1;
+        if (xsp < 2)
+          xsp += 2;
+        if (ysp > -1)
+          ysp += -1;
       }
       keys[1] = false;
       break;
     case 'a':
       if(keys[2]){
-        xsp += 2;
-        ysp += 1;
+        if (xsp < 2)
+          xsp += 2;
+        if (ysp < 1)
+          ysp += 1;
       }
       keys[2] = false;
       break;
     case 'd':
       if(keys[3]){
-        xsp += -2;
-        ysp += -1;
+        if (xsp > -2)
+          xsp += -2;
+        if (ysp > -1)
+          ysp += -1;
       }
       keys[3] = false;
       break;
